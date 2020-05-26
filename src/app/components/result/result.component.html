@@ -1,0 +1,15 @@
+<StackLayout>
+  <Label id="head" class="h1" text="Here is your Link"></Label>
+  <ScrollView orientation="horizontal">
+    <Label id="address"
+    class="h2"
+    [text]="url.myValue"
+    horizontalAlignment="center"
+    ></Label>
+  </ScrollView>
+  <Button class="-primary -rounded-lg" text="Copy Link" (tap)="copy()"></Button>
+  <Button class="-primary -rounded-lg" text="Visit Link" (tap)="visit()"></Button>
+  <Button class="-primary -rounded-lg" text="Share Link" (tap)="shareText()"></Button>
+  <Button class="-primary -rounded-lg" text="Home" (tap)="scanagain()" ></Button>
+</StackLayout>
+
